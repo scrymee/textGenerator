@@ -157,10 +157,6 @@ body {
     margin: 0.5rem 0;
     width: 100%;
 }
-.btns {
-    display: flex;
-    flex-direction: row;
-}
 
 .tools select , .tools input {
     padding: 1rem;
