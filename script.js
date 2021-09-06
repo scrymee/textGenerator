@@ -370,7 +370,7 @@ let scrollHeight = Math.max(
     document.body.clientHeight, document.documentElement.clientHeight
   );
   
-  // 一番下までスクロールした時の数値を取得(window.innerHeight分(画面表示領域分)はスクロールをしないため引く)
+  // 一番下までスクロール時の数値(innerHeightはスクロールをしないため引く)
   let pageMostBottom = scrollHeight - window.innerHeight;
   
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
