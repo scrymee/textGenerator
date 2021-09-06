@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ダミー風データつくるくん</title>
+        <!--logo : https://hatchful.shopify.com/-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="result" id="result">
+            </div>
+            <button class="sm-tools" id="sm-generate"><i class="fa fa-sync-alt"></i></button>
+            <div class="tools">
+                <img src="./logo_transparent.png" alt="" class="logo">
+                <!-- <select name="example">
+                    <option value="サンプル1">コメント</option>
+                    <option value="サンプル2">記事風</option>
+                </select> -->
+                <label for="sectionCount">
+                    作成データ数
+                    <input type="number" name="" id="sectionCount" value=1>
+                </label>
+                <label for="maxLength">
+                    最大文字数
+                    <input type="number" name="" id="maxLength" value=250>
+                </label>
+                <div class="emoji">
+                    <input type="checkbox" name="is-emoji" id="isEmoji">
+                    <label for="isEmoji" class="btn">
+                        絵文字を含む
+                    </label>
+                </div>
+                <button class="btn-generate btn" id="generate">作成する</button>
+                使い方
+            </div>
+
+        </div>
+
+    </body>
+</html>

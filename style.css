@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-attachment: fixed;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+}
+
+/* Common Method*/
+
+.fade {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* Container */
+
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    padding: 0.5rem;
+}
+
+/* Result Common method */
+
+.logo {
+    width: 100px!important;
+}
+
+.content {
+    max-width: 500px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.3);
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+}
+
+.title, .description {
+    cursor: pointer;
+}
+
+.article-header {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 1.3rem;
+    color: royalblue;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.title {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.btn {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.3);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+
+.article-footer {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.article-footer {
+    text-align: right;
+}
+
+
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+}
+
+.sm-tools {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.3);
+    background-color: #9C27B0;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .tools {
+        display: none;
+    }
+    .sm-tools {
+        display: block;
+    }
+}
+
+.tools * {
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.tools select , .tools input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.3);
+}
+
+.tools input[type="checkbox"] {
+    display: none;
+}
+.tools input[type="checkbox"] + label{
+    display: inline-block;
+    border: 1px dashed rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.2);
+}
+input[type="checkbox"]:checked + label{
+    background-color: #fff;
+    border: 3px solid tomato;
+    color: tomato;
+    font-weight: bold;
+    }
+
+.btn-generate {
+    background-color: #9C27B0;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Flash */
+.flash {
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    padding: 1rem 3rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bound {
+	animation: bound .7s linear;
+}
+
+@keyframes bound {
+    0% { transform: scale(1,1); }
+    30% { transform: scale(0.95,1.08); }
+    40% { transform: scale(1.15,.8); }
+    50% { transform: scale(.95,1.08); }
+    60% { transform: scale(1.05,.9); }
+    70% { transform: scale(.98,1.02); }
+    100% { transform: scale(1,1); }
+}
